@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải phương trình bậc I</title>
+</head>
+<body>
+  <div class = "bai1">
+    <h2>Giải phương trình bậc I</h2>
+        <input type="text" id ="input1" class = "input1" placeholder="Hệ số a"><br>
+        <input type="text" id ="input2" class = "input2" placeholder="Hệ số b"><br>
+        <button onclick ="giaiPhuongTrinh()">Giải Phương Trình</button><br>
+    </div>
+        <p id="ketQua"></p>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Đóng góp ý kiến</title>
+</head>
+<body>
+<div class = "title">
+
+        <h1>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h1>
+        <p>
+           Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu <br>
+          Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực địa điểm và thời gian (nếu có).
+   </p>
+    </div>
+   <div class="container">
+         <form id="feedbackForm">
+            <div class="input-group">
+                <input type="text" id="input-name" class = "input-name" placeholder="Họ và tên" required>
+      
+                <input type="text" id="input-card" class = "input-card" placeholder="Mã thẻ" required>
+           </div>
+             <div class="input-group">
+                <input type="tel" id="input-phone" class = "input-phone" placeholder="Số điện thoại" required>
+        
+                <input type="email" id="input-emai" class = "input-email" placeholder="Email" required>
+              </div>
+               <div class="input-group">
+                <select id="input-customer-type" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+                <input type="text" id="input-invoice" class = "input-invoice" placeholder="Mã hóa đơn" required>
+            </div>
+            <div class="input-group">
+                <textarea id="input-description" class = "input-description" placeholder="Nhập chi tiết mô tả" required></textarea>
+            </div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+            <div class="buttonbts">
+    <button class="btn" type="submit">
+        Gửi góp ý <i class="fab fa-facebook-messenger"></i>
+    </button>
+</div>
+        </form>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vhZlH+6dBU5WvN6g+U9DphkzP2WD8E/U6D0XTDmET2IpP9pV/Z3a0izK/DFl3dXSZaR1Q4EfRriL/v8AiV/gDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-lienhe">
+        <div class="lien-he">
+            <h2>LIÊN HỆ </h2>
+            <hr class="divider">
+            <p>Thông tin</p>
+            <p><i class="fas fa-map-marker-alt"></i> Kp.6, P. Linh Trung, Tp.Thủ Đức, Tp. Hồ Chí Minh</p>
+            <p><i class="far fa-envelope"></i> info@uit.edu.vn</p>
+            <p><i class="fas fa-phone"></i> +84 28 372 52002</p>
+        </div>
+
+        <div class="contact-form">
+            <p>Hãy liên lạc với chúng tôi bất cứ khi nào</p>
+            <div class="input-info">
+                <input type="text" id="input-ten" class = "input-hvt" placeholder="Họ và tên" required>
+            </div>
+            <div class="input-info">
+                <input type="email" id="email" class = "input-sdt" placeholder="Địa chỉ email" required>
+            </div>
+            <div class="input-info">
+                <input type="heading" id="heading" class = "input-email" placeholder="Tiêu đề bài viết" required>
+            </div>
+            <div class="input-info">
+                <textarea id="input-noidung" class = " input-noidung" placeholder="Nội dung cần gửi" required></textarea>
+            </div>
+           <button id="submitBtn" onclick="submitForm()">
+                <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bai4</title>
+</head>
+<body>
+  <form>
+        <div class="BMI">
+        <h2 class="heading">TÍNH CHỈ SỐ BMI</h2>
+        <div class="inputs">
+            <div>
+                <p>Nhập cân nặng?</p>
+                <input type="text" placeholder="" id="weight">
+            </div>
+            <div>
+                <p>Nhập chiều cao?</p>
+                <input type="text" placeholder="" id="height">  
+                <p>Chọn loại tuổi</p>
+                <select name="lang" id="lang-select">
+                    <option value="adult">Già, lớn tuổi</option>
+                    <option value="child">Trẻ, nhỏ tuổi</option>
+                </select>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="calculate" onclick="calculateBMI()">Tính BMI</button>
+        </div>
+   </div> 
+ </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vhZlH+6dBU5WvN6g+U9DphkzP2WD8E/U6D0XTDmET2IpP9pV/Z3a0izK/DFl3dXSZaR1Q4EfRriL/v8AiV/gDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+    <div class="dangnhap">
+        <div class="login-container">
+            <h2>Login</h2>
+        </div>
+        <form action="#" method="post">
+            <div class="login-button">
+                <span class="input-icon5">
+                    <i class="fas fa-user icon"></i>
+                </span>
+                <input class="input-text" id="username" name="username" required>
+            </div>
+            <div class="login-button">
+                <span class="input-icon5">
+                    <i class="fas fa-lock icon"></i>
+                </span>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="signin">
+                <button class="sign-in" type="submit">Đăng nhập</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vhZlH+6dBU5WvN6g+U9DphkzP2WD8E/U6D0XTDmET2IpP9pV/Z3a0izK/DFl3dXSZaR1Q4EfRriL/v8AiV/gDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-vhZlH+6dBU5WvN6g+U9DphkzP2WD8E/U6D0XTDmET2IpP9pV/Z3a0izK/DFl3dXSZaR1Q4EfRriL/v8AiV/gDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="overlay">
+        <form>
+            <div class="container-signin">
+                <header class="form-header">
+                    <h2>Login</h2>
+                    <p>Login using your username and password</p>
+                </header>
+                <br>
+                <div class="form-fields">
+                    <span class="input-icon">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input class="input-field" id="name" type="text" placeholder="@Username" required>
+                    <br>
+                    <span class="input-icon">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="input-field" type="password" placeholder="Password" id="pd" name="password" required>
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true" type="button" id="show-password"></i>
+                    </span>
+                    <br>
+                    <button class="login-btn">Log In</button>
+                </div>
+                <div class="additional-actions">
+                    <button class="btn forgot-pass">Forgot Password</button>
+                    <button class="btn sign-up">Sign Up 
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
